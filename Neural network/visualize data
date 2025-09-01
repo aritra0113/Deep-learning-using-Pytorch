@@ -1,0 +1,8 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import matplotlib.pyplot as plt
+import sklearn.datasets
+x,y=sklearn.datasets.make_moons(200,noise=0.20)
+plt.scatter(x[:,0],x[:,1],s=40,c=y,cmap=plt.cm.Spectral)
+plt.show()
